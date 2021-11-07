@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   padding: 8px 5px;
   display: block;
-  background-color: #703fd0;
+  background-color: #42addf;
   border-color: #4a0256;
   text-align: center;
   color: white;
@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
 }
 .wrapper .header__info-button:hover, .wrapper .header__info-button:active, .wrapper .header__info-button:focus {
-  background-color: #7f57ce;
+  background-color: #42addf;
   transform: scale(0.99);
 }
 .wrapper .header__nav {
@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #E91E63;
   min-width: 200px;
   text-align: center;
-  padding-bottom: 4px;
+  padding: 6px;
   border-radius: 20px;
   color: white;
 }
@@ -283,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
     min-width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space;
   }
   .wrapper .header__nav {
     display: none;
