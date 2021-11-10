@@ -17,30 +17,26 @@ closePopupBtn.addEventListener('click', (e) => {
 // const phoneNumber = document.getElementById('phoneNumber');
 // const clientName = document.getElementById('client_name');
 const sendDataBtn = document.getElementById('sendDataPopUp');
+const clName = document.getElementById('client_name');
+const phone = document.getElementById('phoneNumber');
 
 
-function sendData() {
-    const clName = document.getElementById('client_name').value;
-    console.log(clName);
-    // its fucking null
-    const phone = document.getElementById('phoneNumber').value;
-    console.log(phone);
-    sleep(2000);
-    // if (clName != null && phone != null) {
-    //     Email.send({
-    //         Host: "smtp.mail.ru",
-    //         Username: "max.bus@list.ru",
-    //         Password: "PBLZy3H7kAGerxhYYH7t",
-    //         To: 'max.bus@list.ru',
-    //         From: "max.bus@list.ru",
-    //         Subject: `Запрос ${clName} на звонок`,
-    //         Body: `Клиент ${clName} запросил звонок на номер ${phone}. \n 
-    //         Запрос поступил ${getCurrData()}`,
-    //     }).then(
-    //         message => alert("Запрос успешно отправлен")
-    //     );
-    //     popUp.classList.remove('active');
-    // }
+function sendData(form, client_name, phone_number) {
+    if (client_name != null && phone_number.value != null) {
+        Email.send({
+            Host: "smtp.mail.ru",
+            Username: "max.bus@list.ru",
+            Password: "PBLZy3H7kAGerxhYYH7t",
+            To: 'max.bus@list.ru',
+            From: "max.bus@list.ru",
+            Subject: `Запрос ${client_name.value} на звонок`,
+            Body: `Клиент ${client_name.value} запросил звонок на номер ${phone_number.value}. \n 
+            Запрос поступил ${getCurrData()}`,
+        }).then(
+            message => alert("Запрос успешно отправлен")
+        );
+        popUp.classList.remove('active');
+    }
 }
 
 function getCurrData() {
