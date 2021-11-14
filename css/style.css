@@ -283,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
     min-width: 100%;
     display: flex;
-    justify-content: space;
+    justify-content: space-around;
   }
   .wrapper .header__nav {
     display: none;
@@ -426,8 +426,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 1600px) {
   .wrapper .main .carousel__content {
-    top: 60%;
-    left: 20%;
+    top: 70%;
+    left: 17%;
   }
   .wrapper .main .carousel__points {
     top: 80%;
@@ -444,7 +444,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 920px) {
   .wrapper .main .carousel__content {
-    top: 50%;
+    top: 65%;
     left: 7%;
   }
   .wrapper .main .carousel__points {
@@ -454,8 +454,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 800px) {
   .wrapper .main .carousel__content {
-    top: 40%;
-    left: 10%;
+    top: 60%;
+    left: 5%;
   }
   .wrapper .main .carousel__points {
     left: 85%;
@@ -464,8 +464,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 640px) {
   .wrapper .main .carousel__content {
-    top: 10%;
-    left: 7%;
+    transform: scale(0.8);
+    top: 50%;
+    left: 10%;
   }
   .wrapper .main .carousel__points {
     left: 80%;
@@ -473,6 +474,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media screen and (max-width: 415px) {
+  .wrapper .main .carousel {
+    display: none;
+  }
   .wrapper .main .carousel__content {
     top: 0%;
     left: 0%;
@@ -490,22 +494,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   .wrapper .main .carousel-button {
     margin: 0 auto;
-  }
-}
-@media screen and (max-width: 390px) {
-  .wrapper .main .carousel__content-button {
-    position: absolute;
-    padding: 4px 10px;
-    left: 35%;
-    top: 88%;
-  }
-}
-@media screen and (max-width: 350px) {
-  .wrapper .main .carousel__content-button {
-    position: absolute;
-    padding: 4px 10px;
-    left: 4%;
-    top: 76%;
   }
 }
 .wrapper .main .payments {
@@ -778,6 +766,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .wrapper .footer__container {
+  position: relative;
   background-color: #312f36;
   padding: 20px 250px;
   color: white;
