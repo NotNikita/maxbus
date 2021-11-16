@@ -469,8 +469,8 @@
 
       @media screen and (min-width: 1600px) {
         &__content {
-          top: 60%;
-          left: 20%;
+          top: 70%;
+          left: 17%;
         }
 
         &__points {
@@ -492,7 +492,7 @@
 
       @media screen and (max-width:920px) {
         &__content {
-          top: 50%;
+          top: 65%;
           left: 7%;
         }
 
@@ -504,8 +504,8 @@
 
       @media screen and (max-width:800px) {
         &__content {
-          top: 40%;
-          left: 10%;
+          top: 60%;
+          left: 5%;
         }
 
         &__points {
@@ -516,8 +516,8 @@
 
       @media screen and (max-width:640px) {
         &__content {
-          top: 10%;
-          left: 7%;
+          top: 50%;
+          left: 10%;
         }
 
         &__points {
@@ -527,6 +527,10 @@
       }
 
       @media screen and (max-width: 415px) {
+        & {
+          display: none;
+        }
+
         &__content {
           top: 0%;
           left: 0%;
@@ -548,24 +552,6 @@
 
         &-button {
           margin: 0 auto;
-        }
-      }
-
-      @media screen and (max-width: 390px) {
-        &__content-button {
-          position: absolute;
-          padding: 4px 10px;
-          left: 35%;
-          top: 88%;
-        }
-      }
-
-      @media screen and (max-width: 350px) {
-        &__content-button {
-          position: absolute;
-          padding: 4px 10px;
-          left: 4%;
-          top: 76%;
         }
       }
     }
@@ -942,6 +928,7 @@
   .footer {
 
     &__container {
+      position: relative;
       background-color: #312f36;
       padding: 20px 250px;
       @extend %flex;
