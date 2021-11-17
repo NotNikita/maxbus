@@ -149,11 +149,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 25px;
 }
 .wrapper .header__mobile-numbers .header__mobile-number:nth-child(2) {
-  background: url(../images/header/svg/life.svg) right center no-repeat;
-  background-size: 25px;
-}
-.wrapper .header__mobile-numbers .header__mobile-number:nth-child(3) {
-  background: url(../images/header/svg/mts.svg) right center no-repeat;
+  background: url(../images/header/svg/a1.png) right center no-repeat;
   background-size: 25px;
 }
 .wrapper .header__mobile-number {
@@ -645,10 +641,6 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 86px;
 }
 .wrapper .main .advantages__advantage:nth-child(2) .advantages__advantage-pict {
-  background: url(../images/png/b5.png) center no-repeat #fff;
-  background-size: 86px;
-}
-.wrapper .main .advantages__advantage:nth-child(3) .advantages__advantage-pict {
   background: url(../images/png/b3.png) center no-repeat #fff;
   background-size: 86px;
 }
@@ -725,7 +717,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wrapper .main .news__content-button {
   display: block;
-  width: 100%;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 4px;
   color: white;
   text-align: center;
   background-color: #007bff;
@@ -790,11 +784,11 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper .footer__contacts .footer__list .footer__item:nth-child(1) .footer__link:hover, .wrapper .footer__contacts .footer__list .footer__item:nth-child(1) .footer__link:active, .wrapper .footer__contacts .footer__list .footer__item:nth-child(1) .footer__link:focus {
   color: white;
 }
-.wrapper .footer__contacts .footer__list .footer__item:nth-child(1) {
+.wrapper .footer__contacts .footer__list .footer__item:nth-child(1), .wrapper .footer__contacts .footer__list .footer__item:nth-child(2) {
   position: relative;
   padding-left: 25px;
 }
-.wrapper .footer__contacts .footer__list .footer__item:nth-child(1)::before {
+.wrapper .footer__contacts .footer__list .footer__item:nth-child(1)::before, .wrapper .footer__contacts .footer__list .footer__item:nth-child(2)::before {
   content: "\f095";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -804,11 +798,11 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
 }
-.wrapper .footer__contacts .footer__list .footer__item:nth-child(2) {
+.wrapper .footer__contacts .footer__list .footer__item:nth-child(3) {
   position: relative;
   padding-left: 25px;
 }
-.wrapper .footer__contacts .footer__list .footer__item:nth-child(2)::before {
+.wrapper .footer__contacts .footer__list .footer__item:nth-child(3)::before {
   content: "\f0e0";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -825,7 +819,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 13px;
 }
 .wrapper .footer__info .footer__list .footer__item:nth-child(1)::before {
-  content: "\f041";
+  content: "\f071";
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
   font-size: 16px;
