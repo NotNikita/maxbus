@@ -553,6 +553,9 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper .main .services {
   margin-bottom: 30px;
 }
+.wrapper .main .services__container {
+  justify-content: space-around;
+}
 .wrapper .main .services__service {
   border-radius: 6px;
   background-color: #f3f4f5;
@@ -641,6 +644,10 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 86px;
 }
 .wrapper .main .advantages__advantage:nth-child(2) .advantages__advantage-pict {
+  background: url(../images/png/clock.png) center no-repeat #fff;
+  background-size: 86px;
+}
+.wrapper .main .advantages__advantage:nth-child(3) .advantages__advantage-pict {
   background: url(../images/png/b3.png) center no-repeat #fff;
   background-size: 86px;
 }
@@ -658,6 +665,12 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 800px) {
   .wrapper .main .advantages__advantage:not(:last-child) {
     margin-bottom: 60px;
+  }
+  .wrapper .main .advantages__advantage:nth-child(1) {
+    display: none;
+  }
+  .wrapper .main .advantages__advantage:nth-child(3) {
+    display: none;
   }
   .wrapper .main .advantages__container {
     max-width: 100% !important;
@@ -689,7 +702,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }

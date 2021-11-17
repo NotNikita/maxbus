@@ -633,6 +633,7 @@
 
       &__container {
         @extend %flex;
+        justify-content: space-around;
       }
 
       &__service {
@@ -756,6 +757,11 @@
       }
 
       &__advantage:nth-child(2) .advantages__advantage-pict {
+        background: url(../images/png/clock.png) center no-repeat #fff;
+        background-size: 86px;
+      }
+
+      &__advantage:nth-child(3) .advantages__advantage-pict {
         background: url(../images/png/b3.png) center no-repeat #fff;
         background-size: 86px;
       }
@@ -777,7 +783,14 @@
       @media screen and (max-width:800px) {
         &__advantage:not(:last-child) {
           margin-bottom: 60px;
+        }
 
+        &__advantage:nth-child(1) {
+          display: none;
+        }
+
+        &__advantage:nth-child(3) {
+          display: none;
         }
 
         &__container {
@@ -820,7 +833,7 @@
         border-radius: 4px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         margin-bottom: 30px;
       }
