@@ -77,7 +77,8 @@
     //block_2
 
     &__contact {
-      background-color: #cce8ff;
+      background-color: #312f36;
+      color: white;
       border-radius: 5px;
       min-width: math.div(900px, 1220px) * 100%;
       padding: 10px 20px;
@@ -91,15 +92,7 @@
       padding-left: 30px;
       padding-top: 10px;
 
-      &::before {
-        content: "\f098";
-        font-family: 'Font Awesome 5 Free';
-        font-weight: bolder;
-        font-size: 25px;
-        position: absolute;
-        top: 3px;
-        left: 0;
-      }
+
 
       & .header__mobile-number:nth-child(1) {
         background: url(../images/header/svg/a1.png) right center no-repeat;
@@ -124,7 +117,7 @@
       &-link {
         margin-right: 2px;
         display: inline-block;
-        color: black;
+        color: white;
       }
 
       &:hover,
@@ -585,7 +578,7 @@
 
       &__payment-text {
         text-align: center;
-        color: #999;
+        color: rgb(48, 42, 42);
         font-size: 13px;
         font-weight: 600;
         text-align: center;
