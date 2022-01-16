@@ -307,13 +307,8 @@ a {
   }
 
   @media (max-width: 992px) {
-    .navbar-brand {
-      img {
-        
-      }
-    }
     .navbar-nav {
-      display: none!important
+      display: none !important
     }
 
     .navbar-expand-lg {
@@ -326,20 +321,36 @@ a {
     .wrapper .header .navbar .container .navbar-brand img {
       height: 55px;
     }
-    
+
     .navbar .container #schedule {
       display: none;
     }
+
     #lowrez-text {
       display: flex !important;
       align-items: center;
     }
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 552px) {
     .intro-message div.container div.row div.col-lg-12 h1 {
       font-size: 21px;
       font-weight: 300;
+    }
+
+    .wrapper .header .navbar {
+      height: 154px !important;
+    }
+
+    .wrapper .header .navbar .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar-collapse #lowrez-text-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }

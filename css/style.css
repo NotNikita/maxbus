@@ -341,10 +341,22 @@ a {
     align-items: center;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 552px) {
   .wrapper .intro-message div.container div.row div.col-lg-12 h1 {
     font-size: 21px;
     font-weight: 300;
+  }
+  .wrapper .wrapper .header .navbar {
+    height: 154px !important;
+  }
+  .wrapper .wrapper .header .navbar .container {
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper .navbar-collapse #lowrez-text-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
