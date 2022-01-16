@@ -43,7 +43,7 @@
   background-color: #e5e5e5;
   border-radius: 10px;
   border: none;
-  font-size: 18px;
+  font-size: 22px;
   color: #89909F;
 }
 .pop_up_container .pop_up_body input:focus {
@@ -68,6 +68,13 @@
   font-size: 21px;
   top: 15px;
   right: 15px;
+}
+@media (max-width: 1200px) {
+  .pop_up .pop_up_body {
+    width: 420px;
+    height: 460px;
+    padding-top: 0px;
+  }
 }
 
 /*# sourceMappingURL=popup.css.map */
