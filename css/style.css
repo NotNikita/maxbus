@@ -341,15 +341,20 @@ a {
     align-items: center;
   }
 }
+@media (max-width: 652px) {
+  .wrapper .footer_top .container {
+    width: 40%;
+  }
+}
 @media (max-width: 552px) {
   .wrapper .intro-message div.container div.row div.col-lg-12 h1 {
     font-size: 21px;
     font-weight: 300;
   }
-  .wrapper .wrapper .header .navbar {
-    height: 154px !important;
+  .wrapper .header #header-navbar {
+    height: 154px;
   }
-  .wrapper .wrapper .header .navbar .container {
+  .wrapper .navbar #navbar-container {
     display: flex;
     justify-content: center;
   }

@@ -332,17 +332,23 @@ a {
     }
   }
 
+  @media (max-width: 652px) {
+    .footer_top .container {
+      width: 40%;
+    }
+  }
+
   @media (max-width: 552px) {
     .intro-message div.container div.row div.col-lg-12 h1 {
       font-size: 21px;
       font-weight: 300;
     }
 
-    .wrapper .header .navbar {
-      height: 154px !important;
+    .header #header-navbar {
+      height: 154px;
     }
 
-    .wrapper .header .navbar .container {
+    .navbar #navbar-container {
       display: flex;
       justify-content: center;
     }
