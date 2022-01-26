@@ -328,6 +328,13 @@ a {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
+  .wrapper #under-min-time {
+    display: block !important;
+    max-width: 800px;
+  }
+  .wrapper #under-min-time div img {
+    width: 800px;
+  }
 }
 @media (max-width: 802px) {
   .wrapper .wrapper .header .navbar .container .navbar-brand img {
@@ -340,10 +347,24 @@ a {
     display: flex !important;
     align-items: center;
   }
+  .wrapper #under-min-time {
+    display: block !important;
+    max-width: 700px;
+  }
+  .wrapper #under-min-time div img {
+    width: 700px;
+  }
 }
 @media (max-width: 652px) {
   .wrapper .footer_top .container {
     width: 40%;
+  }
+  .wrapper #under-min-time {
+    display: block !important;
+    max-width: 550px;
+  }
+  .wrapper #under-min-time div img {
+    width: 550px;
   }
 }
 @media (max-width: 552px) {
@@ -362,6 +383,28 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .wrapper #under-min-time {
+    display: block !important;
+    max-width: 500px;
+  }
+  .wrapper #under-min-time div img {
+    width: 500px;
+  }
+}
+@media (max-width: 360px) {
+  .wrapper #lowrez-text-wrapper span.m-2 {
+    margin: 0px !important;
+  }
+  .wrapper #lowrez-text-wrapper #lowrez-text {
+    margin-left: 40px;
+  }
+  .wrapper #under-min-time {
+    display: block !important;
+    max-width: 360px;
+  }
+  .wrapper #under-min-time div img {
+    width: 360px;
   }
 }
 
