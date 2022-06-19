@@ -170,7 +170,7 @@ a {
   background-color: rgba(255, 255, 255, 0.9);
   border-color: #fff;
   box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.15);
-  height: 70px;
+  height: 86px;
   font-size: 16px;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -214,6 +214,26 @@ a {
   display: block;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
+}
+.wrapper .header .navbar .container .navbar-collapse .navbar-contacts {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .header .navbar .container .navbar-collapse .navbar-contacts a {
+  margin-left: 30px;
+  width: 30px;
+  height: 30px;
+}
+.wrapper .header .navbar .container .navbar-collapse .navbar-contacts a:first-of-type {
+  margin-left: 0;
+}
+.wrapper .header .navbar .container .navbar-collapse .navbar-contacts a .contacts-icon-image {
+  width: 30px;
+  height: 30px;
+}
+.wrapper .header .navbar .container .navbar-collapse .navbar-contacts a .contacts-icon-image:hover {
+  transform: rotate(360deg);
+  transition: 0.5s;
 }
 .wrapper .header .navbar .container .navbar-collapse .m-2 {
   margin: 0.5rem;
@@ -340,6 +360,9 @@ a {
   .wrapper .wrapper .header .navbar .container .navbar-brand img {
     height: 55px;
   }
+  .wrapper .navbar {
+    height: 108px !important;
+  }
   .wrapper .navbar .container #schedule {
     display: none;
   }
@@ -373,7 +396,7 @@ a {
     font-weight: 300;
   }
   .wrapper .header #header-navbar {
-    height: 154px;
+    height: 187px !important;
   }
   .wrapper .navbar #navbar-container {
     display: flex;

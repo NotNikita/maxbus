@@ -113,7 +113,7 @@ a {
       background-color: rgba(255, 255, 255, .9);
       border-color: #fff;
       box-shadow: 0 1px 15px 0 rgb(0 0 0 / 15%);
-      height: 70px;
+      height: 86px;
       font-size: 16px;
       flex-flow: row nowrap;
       justify-content: flex-start;
@@ -164,6 +164,33 @@ a {
                 display: block;
                 padding-right: 0.5rem;
                 padding-left: 0.5rem;
+              }
+            }
+          }
+
+          .navbar-contacts {
+            display: flex;
+            justify-content: center;
+
+            // for wrapper of social icon link
+            a {
+              margin-left: 30px;
+              width: 30px;
+              height: 30px;
+
+              &:first-of-type {
+                margin-left: 0;
+              }
+
+              // image tag itself with svg image
+              .contacts-icon-image {
+                width: 30px;
+                height: 30px;
+
+                &:hover {
+                  transform: rotate(360deg);
+                  transition: 0.5s;
+                }
               }
             }
           }
@@ -331,6 +358,10 @@ a {
       height: 55px;
     }
 
+    .navbar {
+      height: 108px !important
+    }
+
     .navbar .container #schedule {
       display: none;
     }
@@ -372,7 +403,7 @@ a {
     }
 
     .header #header-navbar {
-      height: 154px;
+      height: 187px !important;
     }
 
     .navbar #navbar-container {
