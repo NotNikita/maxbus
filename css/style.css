@@ -4,25 +4,31 @@
   border: 0;
 }
 
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   line-height: 1;
@@ -32,7 +38,9 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -49,7 +57,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -65,7 +74,12 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: 400;
 }
@@ -152,6 +166,9 @@ a {
   background-color: #007bff;
   border-color: #007bff;
   text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   border: 1px solid transparent;
   font-weight: 400;
@@ -159,13 +176,17 @@ a {
 }
 
 .wrapper {
+  overflow-x: hidden;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 .wrapper .header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1020;
 }
+
 .wrapper .header .navbar {
   background-color: rgba(255, 255, 255, 0.9);
   border-color: #fff;
@@ -175,9 +196,11 @@ a {
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
+
 .wrapper .header .navbar .container {
   max-width: 1140px;
 }
+
 .wrapper .header .navbar .container .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
@@ -186,15 +209,18 @@ a {
   font-size: 1.25rem;
   line-height: inherit;
 }
+
 .wrapper .header .navbar .container .navbar-brand img {
   max-width: 285px;
   float: left;
   height: 65px;
   padding: 5px;
 }
+
 .wrapper .header .navbar .container span {
   display: block;
 }
+
 .wrapper .header .navbar .container .navbar-collapse {
   display: flex;
   flex-basis: auto;
@@ -202,6 +228,7 @@ a {
   align-items: center;
   justify-content: flex-end;
 }
+
 .wrapper .header .navbar .container .navbar-collapse .navbar-nav {
   display: flex;
   padding-left: 0;
@@ -209,38 +236,47 @@ a {
   list-style: none;
   flex-direction: row;
 }
+
 .wrapper .header .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
   font-weight: 500;
   display: block;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
+
 .wrapper .header .navbar .container .navbar-collapse .navbar-contacts {
   display: flex;
   justify-content: center;
 }
+
 .wrapper .header .navbar .container .navbar-collapse .navbar-contacts a {
   margin-left: 30px;
   width: 30px;
   height: 30px;
 }
+
 .wrapper .header .navbar .container .navbar-collapse .navbar-contacts a:first-of-type {
   margin-left: 0;
 }
+
 .wrapper .header .navbar .container .navbar-collapse .navbar-contacts a .contacts-icon-image {
   width: 30px;
   height: 30px;
 }
+
 .wrapper .header .navbar .container .navbar-collapse .navbar-contacts a .contacts-icon-image:hover {
   transform: rotate(360deg);
   transition: 0.5s;
 }
+
 .wrapper .header .navbar .container .navbar-collapse .m-2 {
   margin: 0.5rem;
 }
+
 .wrapper .header .navbar .container .navbar-collapse #lowrez-text {
   display: none;
 }
+
 .wrapper .intro-header {
   padding-bottom: 50px;
   height: 580px;
@@ -249,6 +285,7 @@ a {
   color: #fff;
   position: relative;
 }
+
 .wrapper .intro-header .overlay {
   display: block;
   position: absolute;
@@ -258,13 +295,16 @@ a {
   right: 0;
   background-color: rgba(255, 255, 255, 0.43);
 }
+
 .wrapper .intro-header .overlay .intro-message {
   margin-top: 180px;
 }
-.wrapper .intro-header .overlay .intro-message .container > .row .col-lg-12 h1 {
+
+.wrapper .intro-header .overlay .intro-message .container>.row .col-lg-12 h1 {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
 }
-.wrapper .intro-header .overlay .intro-message .container > .row .col-lg-12 p {
+
+.wrapper .intro-header .overlay .intro-message .container>.row .col-lg-12 p {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
   color: #881616;
   text-align: center;
@@ -273,6 +313,7 @@ a {
   margin-top: 20px;
   margin-bottom: 1rem;
 }
+
 .wrapper .maxbusIs {
   font-size: 38px;
   text-transform: uppercase;
@@ -280,152 +321,188 @@ a {
   margin-top: 20px;
   margin-bottom: 1rem;
 }
+
 .wrapper .content-section-b {
   padding: 50px 0;
   text-align: center;
 }
+
 .wrapper .content-section-b .row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
+
 .wrapper .content-section-b .items-list .item {
   border: none;
   clear: both;
   margin-bottom: 4px;
   padding: 0;
 }
+
 .wrapper .content-section-b .items-list .item .item-image {
   margin-left: -5px;
 }
+
 .wrapper .content-section-b .items-list .item .item-image .img {
   border-style: none;
 }
+
 .wrapper .content-section-b .items-list .item .item-name {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.3rem;
   color: #354e60;
 }
+
 .wrapper .content-section-b .items-list .item .item-description {
   font-size: 16px;
   color: #354e60;
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
 .wrapper .footer,
 .wrapper .footer-img {
-  background-image: url("https://piter-nord.ru/Assets/Images/bg-footer.jpg");
+  background-image: url("../images/footer/png/road.jpg");
   background-position: center bottom;
+  background-size: cover;
   width: 100%;
   z-index: 100;
   display: block;
   position: relative;
 }
+
 .wrapper .footer {
   margin: 0 auto;
   color: #D6D6D6;
   padding: 0;
 }
+
 .wrapper .footer .footer_top_holder {
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
 }
+
 .wrapper .footer .footer_top_holder .footer_top {
   padding: 72px 0 52px;
 }
+
 @media (min-width: 1200px) {
   .wrapper .intro-message div.container div.row div.col-lg-12 h1 {
     font-size: 38px;
     font-weight: 300;
   }
 }
+
 @media (max-width: 992px) {
   .wrapper .navbar-nav {
     display: none !important;
   }
+
   .wrapper .navbar-expand-lg {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
+
   .wrapper #under-min-time {
     display: block !important;
     max-width: 800px;
   }
+
   .wrapper #under-min-time div img {
     width: 800px;
   }
 }
+
 @media (max-width: 802px) {
   .wrapper .wrapper .header .navbar .container .navbar-brand img {
     height: 55px;
   }
+
   .wrapper .navbar {
     height: 108px !important;
   }
+
   .wrapper .navbar .container #schedule {
     display: none;
   }
+
   .wrapper #lowrez-text {
     display: flex !important;
     align-items: center;
   }
+
   .wrapper #under-min-time {
     display: block !important;
     max-width: 700px;
   }
+
   .wrapper #under-min-time div img {
     width: 700px;
   }
 }
+
 @media (max-width: 652px) {
   .wrapper .footer_top .container {
     width: 40%;
   }
+
   .wrapper #under-min-time {
     display: block !important;
     max-width: 550px;
   }
+
   .wrapper #under-min-time div img {
     width: 550px;
   }
 }
+
 @media (max-width: 552px) {
   .wrapper .intro-message div.container div.row div.col-lg-12 h1 {
     font-size: 21px;
     font-weight: 300;
   }
+
   .wrapper .header #header-navbar {
     height: 187px !important;
   }
+
   .wrapper .navbar #navbar-container {
     display: flex;
     justify-content: center;
   }
+
   .wrapper .navbar-collapse #lowrez-text-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .wrapper #under-min-time {
     display: block !important;
     max-width: 500px;
   }
+
   .wrapper #under-min-time div img {
     width: 500px;
   }
 }
+
 @media (max-width: 360px) {
   .wrapper #lowrez-text-wrapper span.m-2 {
     margin: 0px !important;
   }
+
   .wrapper #lowrez-text-wrapper #lowrez-text {
     margin-left: 40px;
   }
+
   .wrapper #under-min-time {
     display: block !important;
     max-width: 360px;
   }
+
   .wrapper #under-min-time div img {
     width: 360px;
   }

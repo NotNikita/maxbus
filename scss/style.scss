@@ -97,7 +97,7 @@ a {
 
 
 .wrapper {
-
+  overflow-x: hidden;
   transition: color .15s ease-in-out,
     background-color .15s ease-in-out,
     border-color .15s ease-in-out,
@@ -302,8 +302,9 @@ a {
 
   .footer,
   .footer-img {
-    background-image: url('https://piter-nord.ru/Assets/Images/bg-footer.jpg');
+    background-image: url('../images/footer/png/road.jpg');
     background-position: center bottom;
+    background-size: cover;
     width: 100%;
     z-index: 100;
     display: block;
